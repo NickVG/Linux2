@@ -7,44 +7,44 @@ MACHINES = {
         :ip_addr => '192.168.11.101',
 	:disks => {
 		:sata1 => {
-			:dfile => '/mnt/vmlab/otus/sata1.vdi',
+			:dfile => './disks/sata1.vdi',
 			:size => 250,
 			:port => 1
 		},
 		:sata2 => {
-                        :dfile => '/mnt/vmlab/otus/sata2.vdi',
+                        :dfile => './disks/sata2.vdi',
                         :size => 250, # Megabytes
 			:port => 2
 		},
                 :sata3 => {
-                        :dfile => '/mnt/vmlab/otus/sata3.vdi',
+                        :dfile => './disks/sata3.vdi',
                         :size => 250,
                         :port => 3
                 },
                 :sata4 => {
-                        :dfile => '/mnt/vmlab/otus/sata4.vdi',
+                        :dfile => './disks/sata4.vdi',
                         :size => 250, # Megabytes
                         :port => 4
                 },
                 :sata5 => {
-                        :dfile => '/mnt/vmlab/otus/sata5.vdi',
+                        :dfile => './disks/sata5.vdi',
                         :size => 250, # Megabytes
                         :port => 5
                 },
                 :sata6 => {
-                        :dfile => '/mnt/vmlab/otus/sata6.vdi',
+                        :dfile => './disks/sata6.vdi',
                         :size => 350, # Megabytes
                         :port => 6
                 },
                 :sata7 => {
-                        :dfile => '/mnt/vmlab/otus/sata7.vdi',
+                        :dfile => './disks/sata7.vdi',
                         :size => 350, # Megabytes
                         :port => 7
-                },
-                :sata8 => {
-                        :dfile => '/mnt/vmlab/otus/sata8.vdi',
-                        :size => 40960, # Megabytes
-                        :port => 8
+#                },
+#                :sata8 => {
+#                        :dfile => './disks/sata8.vdi',
+#                        :size => 40960, # Megabytes
+#                        :port => 8
                 }
 
 	}
