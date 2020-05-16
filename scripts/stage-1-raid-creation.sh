@@ -23,3 +23,8 @@ for i in $(seq 1 5); do sudo mkfs.ext4 /dev/md0p$i; done
 mkdir -p /raid/part{1,2,3,4,5}
 for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
 
+#for i in $(seq 1 5); do sudo echo "/dev/md0p1    /raid/part$i ext4  defaults    1 2"; done 
+for ((i=1; i<6; i++))
+do
+echo /dev/md0p$i    /raid/part$i ext4  defaults    1 2 >> /etc/fstab
+done
